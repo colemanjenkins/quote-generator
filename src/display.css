@@ -1,4 +1,23 @@
 
 .quoteDisplay {
-    text-align: center
+    text-align: center;
+    padding-top: 20px;
+}
+
+.quoteStyle {
+    margin-top: 50px;
+}
+
+.buttonWithPicture {
+    justify-content: center
+}
+
+.quoteChangeButton {
+}
+
+.picture {
+    object-fit: cover;
+    width: 320px;
+    height: 240px;
+    justify-content: center
 }

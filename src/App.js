@@ -3,29 +3,17 @@ import './App.css';
 import QuoteDisplay from "./display.js";
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 0 //default quote: Mark Twain
-    }
-  }
 
-  handleButtonClick = () => {
-    this.setState(prevState => {
-      return { value: prevState.value + 1 };
-    });
-  }
+class App extends Component {
 
   render() {
     return (
       <div>
-        <h1 style={{ color: "black", textAlign: "center" }}>
-          Inspirational Quotes
+        <h1 className="pageHeader">
+          Popular Quotes
         </h1>
         <div>
-          <QuoteDisplay handleButtonClick={this.handleButtonClick} buttonVal={this.state.value} />
-          {/* <Button /> */}
+          <QuoteDisplay />
         </div>
       </div >
     );
